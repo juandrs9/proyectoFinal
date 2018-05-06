@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo de documento:</strong>
+  <%= @user.Tipo_de_documento %>
+</p>
+
+<p>
+  <strong>Numero de documento:</strong>
+  <%= @user.Numero_de_documento %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @user.Nombre %>
+</p>
+
+<p>
+  <strong>Telefono de residencia:</strong>
+  <%= @user.Telefono_de_residencia %>
+</p>
+
+<p>
+  <strong>Telefono celular:</strong>
+  <%= @user.Telefono_celular %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @user.Direccion %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @user.Ciudad %>
+</p>
+
+<p>
+  <strong>Departamento:</strong>
+  <%= @user.Departamento %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @user.Pais %>
+</p>
+
+<p>
+  <strong>Profesion:</strong>
+  <%= @user.Profesion %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.Email %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

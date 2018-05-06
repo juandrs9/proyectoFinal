@@ -1,0 +1,72 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Tipo_de_documento %>
+    <%= form.text_field :Tipo_de_documento, id: :user_Tipo_de_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Numero_de_documento %>
+    <%= form.text_field :Numero_de_documento, id: :user_Numero_de_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Nombre %>
+    <%= form.text_field :Nombre, id: :user_Nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Telefono_de_residencia %>
+    <%= form.text_field :Telefono_de_residencia, id: :user_Telefono_de_residencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Telefono_celular %>
+    <%= form.text_field :Telefono_celular, id: :user_Telefono_celular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Direccion %>
+    <%= form.text_field :Direccion, id: :user_Direccion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Ciudad %>
+    <%= form.text_field :Ciudad, id: :user_Ciudad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Departamento %>
+    <%= form.text_field :Departamento, id: :user_Departamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pais %>
+    <%= form.text_field :Pais, id: :user_Pais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Profesion %>
+    <%= form.text_field :Profesion, id: :user_Profesion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Email %>
+    <%= form.text_field :Email, id: :user_Email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
